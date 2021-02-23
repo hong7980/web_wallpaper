@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c1b31ecf-23c9-483d-a81d-8cd812810c07" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1orRomofFho2x6QAvhnvBTM1ePh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Go Build.go build main.go">
+    <configuration name="go build download_img.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="webdav" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/download_img.go" />
+      <package value="webdav" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="webdav" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="webdav" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build webdav" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="webdav" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="webdav" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build download_img.go" />
+        <item itemvalue="Go Build.go build webdav" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="688" y="924" key="#Go_Modules" timestamp="1614043163601">
+      <screen x="314" y="429" width="1148" height="1287" />
+    </state>
+    <state x="688" y="924" key="#Go_Modules/314.429.1148.1287@314.429.1148.1287" timestamp="1614043163601" />
+    <state x="610" y="429" key="FileChooserDialogImpl" timestamp="1614097972789">
+      <screen x="314" y="429" width="1016" height="448" />
+    </state>
+    <state x="610" y="429" key="FileChooserDialogImpl/314.429.1016.448@314.429.1016.448" timestamp="1614097972789" />
+    <state width="974" height="367" key="GridCell.Tab.0.bottom" timestamp="1614095447338">
+      <screen x="314" y="429" width="1016" height="999" />
+    </state>
+    <state width="974" height="367" key="GridCell.Tab.0.bottom/314.429.1016.999@314.429.1016.999" timestamp="1614095447338" />
+    <state width="990" height="367" key="GridCell.Tab.0.bottom/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
+    <state width="1106" height="367" key="GridCell.Tab.0.bottom/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
+    <state width="693" height="367" key="GridCell.Tab.0.bottom/314.429.735.999@314.429.735.999" timestamp="1614091064522" />
+    <state width="974" height="367" key="GridCell.Tab.0.center" timestamp="1614095447338">
+      <screen x="314" y="429" width="1016" height="999" />
+    </state>
+    <state width="974" height="367" key="GridCell.Tab.0.center/314.429.1016.999@314.429.1016.999" timestamp="1614095447338" />
+    <state width="990" height="367" key="GridCell.Tab.0.center/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
+    <state width="1106" height="367" key="GridCell.Tab.0.center/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
+    <state width="693" height="367" key="GridCell.Tab.0.center/314.429.735.999@314.429.735.999" timestamp="1614091064521" />
+    <state width="974" height="367" key="GridCell.Tab.0.left" timestamp="1614095447338">
+      <screen x="314" y="429" width="1016" height="999" />
+    </state>
+    <state width="974" height="367" key="GridCell.Tab.0.left/314.429.1016.999@314.429.1016.999" timestamp="1614095447337" />
+    <state width="990" height="367" key="GridCell.Tab.0.left/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
+    <state width="1106" height="367" key="GridCell.Tab.0.left/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
+    <state width="693" height="367" key="GridCell.Tab.0.left/314.429.735.999@314.429.735.999" timestamp="1614091064521" />
+    <state width="974" height="367" key="GridCell.Tab.0.right" timestamp="1614095447338">
+      <screen x="314" y="429" width="1016" height="999" />
+    </state>
+    <state width="974" height="367" key="GridCell.Tab.0.right/314.429.1016.999@314.429.1016.999" timestamp="1614095447338" />
+    <state width="990" height="367" key="GridCell.Tab.0.right/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
+    <state width="1106" height="367" key="GridCell.Tab.0.right/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
+    <state width="693" height="367" key="GridCell.Tab.0.right/314.429.735.999@314.429.735.999" timestamp="1614091064522" />
+  </component>
+</project>
