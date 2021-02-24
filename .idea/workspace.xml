@@ -20,19 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1b31ecf-23c9-483d-a81d-8cd812810c07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/srv/dwnpic/bing/Wallpaper.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srv/handler/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srv/handler/web_dav/web_dav.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srv/main/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srv/router/webdav.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/web_dav.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webdav.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web_wallpaper.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download_img.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/download_img.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv/dwnpic/bing/Wallpaper.go" beforeDir="false" afterPath="$PROJECT_DIR$/srv/dwnpic/bing/Wallpaper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv/handler/web_dav/web_dav.go" beforeDir="false" afterPath="$PROJECT_DIR$/srv/handler/web_dav/web_dav.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/srv/main/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +38,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="C:\Go" />
+  <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -76,10 +68,11 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="go.sdk" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
       <recent name="D:\goproject\web_wallpaper\test" />
     </key>
   </component>
@@ -92,7 +85,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="web_wallpaper" />
       <working_directory value="$PROJECT_DIR$" />
@@ -108,6 +101,15 @@
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/download_img.go" />
+      <package value="webdav" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="web_wallpaper" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/srv/main/main.go" />
       <package value="webdav" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
@@ -143,6 +145,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build download_img.go" />
         <item itemvalue="Go Build.go build webdav" />
@@ -163,6 +166,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -176,38 +180,47 @@
       <screen x="314" y="429" width="1016" height="448" />
     </state>
     <state x="610" y="429" key="FileChooserDialogImpl/314.429.1016.448@314.429.1016.448" timestamp="1614097972789" />
-    <state width="974" height="367" key="GridCell.Tab.0.bottom" timestamp="1614095447338">
-      <screen x="314" y="429" width="1016" height="999" />
+    <state width="1236" height="379" key="GridCell.Tab.0.bottom" timestamp="1614138418111">
+      <screen x="314" y="429" width="1278" height="1287" />
     </state>
     <state width="974" height="367" key="GridCell.Tab.0.bottom/314.429.1016.999@314.429.1016.999" timestamp="1614095447338" />
     <state width="990" height="367" key="GridCell.Tab.0.bottom/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
     <state width="1106" height="367" key="GridCell.Tab.0.bottom/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
+    <state width="1236" height="379" key="GridCell.Tab.0.bottom/314.429.1278.1287@314.429.1278.1287" timestamp="1614138418111" />
     <state width="693" height="367" key="GridCell.Tab.0.bottom/314.429.735.999@314.429.735.999" timestamp="1614091064522" />
-    <state width="974" height="367" key="GridCell.Tab.0.center" timestamp="1614095447338">
-      <screen x="314" y="429" width="1016" height="999" />
+    <state width="1236" height="379" key="GridCell.Tab.0.center" timestamp="1614138418110">
+      <screen x="314" y="429" width="1278" height="1287" />
     </state>
     <state width="974" height="367" key="GridCell.Tab.0.center/314.429.1016.999@314.429.1016.999" timestamp="1614095447338" />
     <state width="990" height="367" key="GridCell.Tab.0.center/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
     <state width="1106" height="367" key="GridCell.Tab.0.center/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
+    <state width="1236" height="379" key="GridCell.Tab.0.center/314.429.1278.1287@314.429.1278.1287" timestamp="1614138418110" />
     <state width="693" height="367" key="GridCell.Tab.0.center/314.429.735.999@314.429.735.999" timestamp="1614091064521" />
-    <state width="974" height="367" key="GridCell.Tab.0.left" timestamp="1614095447338">
-      <screen x="314" y="429" width="1016" height="999" />
+    <state width="1236" height="379" key="GridCell.Tab.0.left" timestamp="1614138418110">
+      <screen x="314" y="429" width="1278" height="1287" />
     </state>
     <state width="974" height="367" key="GridCell.Tab.0.left/314.429.1016.999@314.429.1016.999" timestamp="1614095447337" />
     <state width="990" height="367" key="GridCell.Tab.0.left/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
     <state width="1106" height="367" key="GridCell.Tab.0.left/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
+    <state width="1236" height="379" key="GridCell.Tab.0.left/314.429.1278.1287@314.429.1278.1287" timestamp="1614138418110" />
     <state width="693" height="367" key="GridCell.Tab.0.left/314.429.735.999@314.429.735.999" timestamp="1614091064521" />
-    <state width="974" height="367" key="GridCell.Tab.0.right" timestamp="1614095447338">
-      <screen x="314" y="429" width="1016" height="999" />
+    <state width="1236" height="379" key="GridCell.Tab.0.right" timestamp="1614138418110">
+      <screen x="314" y="429" width="1278" height="1287" />
     </state>
     <state width="974" height="367" key="GridCell.Tab.0.right/314.429.1016.999@314.429.1016.999" timestamp="1614095447338" />
     <state width="990" height="367" key="GridCell.Tab.0.right/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
     <state width="1106" height="367" key="GridCell.Tab.0.right/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
+    <state width="1236" height="379" key="GridCell.Tab.0.right/314.429.1278.1287@314.429.1278.1287" timestamp="1614138418110" />
     <state width="693" height="367" key="GridCell.Tab.0.right/314.429.735.999@314.429.735.999" timestamp="1614091064522" />
-    <state x="1030" y="449" key="SettingsEditor" timestamp="1614129790475">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="625" y="842" key="SettingsEditor" timestamp="1614136625477">
+      <screen x="314" y="429" width="1278" height="1287" />
     </state>
     <state x="1030" y="449" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1614129790475" />
+    <state x="625" y="842" key="SettingsEditor/314.429.1278.1287@314.429.1278.1287" timestamp="1614136625477" />
+    <state x="774" y="1005" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614137197789">
+      <screen x="314" y="429" width="1278" height="1287" />
+    </state>
+    <state x="774" y="1005" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/314.429.1278.1287@314.429.1278.1287" timestamp="1614137197789" />
     <state x="303" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1614132580225">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

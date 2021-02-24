@@ -19,7 +19,7 @@ func main() {
 	wdvHandler := negroni.New()
 	wdvHandler.UseHandler(wdvRouter)
 
-	webdavServer := &http.Server{Addr: "0.0.0.0", Handler: wdvHandler}
+	webdavServer := &http.Server{Addr: "0.0.0.0:80", Handler: wdvHandler}
 
 	// 启动所有服务
 	err := gracehttp.Serve(
@@ -28,5 +28,6 @@ func main() {
 
 	if err != nil {
 		fmt.Println(err)
+		return
 	}
 }

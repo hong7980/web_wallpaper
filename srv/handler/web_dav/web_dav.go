@@ -13,7 +13,7 @@ func WebDav(w http.ResponseWriter, req *http.Request, next http.HandlerFunc) {
 		return
 	}
 	fs := &webdav.Handler{
-		FileSystem: webdav.Dir("."),
+		FileSystem: webdav.Dir("../../../img"),
 		LockSystem: webdav.NewMemLS(),
 	}
 	fs.ServeHTTP(w, req)
