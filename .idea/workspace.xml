@@ -19,12 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1b31ecf-23c9-483d-a81d-8cd812810c07" name="Default Changelist" comment="">
+    <list default="true" id="c1b31ecf-23c9-483d-a81d-8cd812810c07" name="Default Changelist" comment="format the code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv/dwnpic/bing/Wallpaper.go" beforeDir="false" afterPath="$PROJECT_DIR$/srv/dwnpic/bing/Wallpaper.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv/handler/web_dav/web_dav.go" beforeDir="false" afterPath="$PROJECT_DIR$/srv/handler/web_dav/web_dav.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/srv/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv/router/webdav.go" beforeDir="false" afterPath="$PROJECT_DIR$/srv/router/webdav.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/web_dav.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/web_dav.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +56,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
@@ -96,20 +100,20 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build download_img.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="web_wallpaper" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/download_img.go" />
-      <package value="webdav" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="web_wallpaper" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/srv/main/main.go" />
+      <package value="webdav" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="web_wallpaper" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/test/main.go" />
       <package value="webdav" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
@@ -123,12 +127,21 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build webdav" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build web_dav.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="web_wallpaper" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/test/web_dav.go" />
+      <package value="webdav" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build webdav/test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="web_wallpaper" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="webdav" />
+      <filePath value="$PROJECT_DIR$/test/main.go" />
+      <package value="webdav/test" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
@@ -146,9 +159,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Build.go build web_dav.go" />
+        <item itemvalue="Go Build.go build main.go (2)" />
+        <item itemvalue="Go Build.go build webdav/test" />
         <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Build.go build download_img.go" />
-        <item itemvalue="Go Build.go build webdav" />
       </list>
     </recent_temporary>
   </component>
@@ -168,6 +182,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="format the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="format the code" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
@@ -180,43 +198,56 @@
       <screen x="314" y="429" width="1016" height="448" />
     </state>
     <state x="610" y="429" key="FileChooserDialogImpl/314.429.1016.448@314.429.1016.448" timestamp="1614097972789" />
-    <state width="1236" height="379" key="GridCell.Tab.0.bottom" timestamp="1614138418111">
-      <screen x="314" y="429" width="1278" height="1287" />
+    <state width="1236" height="379" key="GridCell.Tab.0.bottom" timestamp="1614152575228">
+      <screen x="311" y="429" width="1278" height="1287" />
     </state>
+    <state width="1236" height="379" key="GridCell.Tab.0.bottom/311.429.1278.1287@311.429.1278.1287" timestamp="1614152575228" />
+    <state width="1657" height="379" key="GridCell.Tab.0.bottom/311.429.1699.1287@311.429.1699.1287" timestamp="1614149135826" />
     <state width="974" height="367" key="GridCell.Tab.0.bottom/314.429.1016.999@314.429.1016.999" timestamp="1614095447338" />
     <state width="990" height="367" key="GridCell.Tab.0.bottom/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
     <state width="1106" height="367" key="GridCell.Tab.0.bottom/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
-    <state width="1236" height="379" key="GridCell.Tab.0.bottom/314.429.1278.1287@314.429.1278.1287" timestamp="1614138418111" />
+    <state width="1236" height="379" key="GridCell.Tab.0.bottom/314.429.1278.1287@314.429.1278.1287" timestamp="1614147690435" />
     <state width="693" height="367" key="GridCell.Tab.0.bottom/314.429.735.999@314.429.735.999" timestamp="1614091064522" />
-    <state width="1236" height="379" key="GridCell.Tab.0.center" timestamp="1614138418110">
-      <screen x="314" y="429" width="1278" height="1287" />
+    <state width="1236" height="379" key="GridCell.Tab.0.center" timestamp="1614152575228">
+      <screen x="311" y="429" width="1278" height="1287" />
     </state>
+    <state width="1236" height="379" key="GridCell.Tab.0.center/311.429.1278.1287@311.429.1278.1287" timestamp="1614152575228" />
+    <state width="1657" height="379" key="GridCell.Tab.0.center/311.429.1699.1287@311.429.1699.1287" timestamp="1614149135825" />
     <state width="974" height="367" key="GridCell.Tab.0.center/314.429.1016.999@314.429.1016.999" timestamp="1614095447338" />
     <state width="990" height="367" key="GridCell.Tab.0.center/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
     <state width="1106" height="367" key="GridCell.Tab.0.center/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
-    <state width="1236" height="379" key="GridCell.Tab.0.center/314.429.1278.1287@314.429.1278.1287" timestamp="1614138418110" />
+    <state width="1236" height="379" key="GridCell.Tab.0.center/314.429.1278.1287@314.429.1278.1287" timestamp="1614147690434" />
     <state width="693" height="367" key="GridCell.Tab.0.center/314.429.735.999@314.429.735.999" timestamp="1614091064521" />
-    <state width="1236" height="379" key="GridCell.Tab.0.left" timestamp="1614138418110">
-      <screen x="314" y="429" width="1278" height="1287" />
+    <state width="1236" height="379" key="GridCell.Tab.0.left" timestamp="1614152575228">
+      <screen x="311" y="429" width="1278" height="1287" />
     </state>
+    <state width="1236" height="379" key="GridCell.Tab.0.left/311.429.1278.1287@311.429.1278.1287" timestamp="1614152575228" />
+    <state width="1657" height="379" key="GridCell.Tab.0.left/311.429.1699.1287@311.429.1699.1287" timestamp="1614149135825" />
     <state width="974" height="367" key="GridCell.Tab.0.left/314.429.1016.999@314.429.1016.999" timestamp="1614095447337" />
     <state width="990" height="367" key="GridCell.Tab.0.left/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
     <state width="1106" height="367" key="GridCell.Tab.0.left/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
-    <state width="1236" height="379" key="GridCell.Tab.0.left/314.429.1278.1287@314.429.1278.1287" timestamp="1614138418110" />
+    <state width="1236" height="379" key="GridCell.Tab.0.left/314.429.1278.1287@314.429.1278.1287" timestamp="1614147690434" />
     <state width="693" height="367" key="GridCell.Tab.0.left/314.429.735.999@314.429.735.999" timestamp="1614091064521" />
-    <state width="1236" height="379" key="GridCell.Tab.0.right" timestamp="1614138418110">
-      <screen x="314" y="429" width="1278" height="1287" />
+    <state width="1236" height="379" key="GridCell.Tab.0.right" timestamp="1614152575228">
+      <screen x="311" y="429" width="1278" height="1287" />
     </state>
+    <state width="1236" height="379" key="GridCell.Tab.0.right/311.429.1278.1287@311.429.1278.1287" timestamp="1614152575228" />
+    <state width="1657" height="379" key="GridCell.Tab.0.right/311.429.1699.1287@311.429.1699.1287" timestamp="1614149135825" />
     <state width="974" height="367" key="GridCell.Tab.0.right/314.429.1016.999@314.429.1016.999" timestamp="1614095447338" />
     <state width="990" height="367" key="GridCell.Tab.0.right/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
     <state width="1106" height="367" key="GridCell.Tab.0.right/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
-    <state width="1236" height="379" key="GridCell.Tab.0.right/314.429.1278.1287@314.429.1278.1287" timestamp="1614138418110" />
+    <state width="1236" height="379" key="GridCell.Tab.0.right/314.429.1278.1287@314.429.1278.1287" timestamp="1614147690434" />
     <state width="693" height="367" key="GridCell.Tab.0.right/314.429.735.999@314.429.735.999" timestamp="1614091064522" />
     <state x="625" y="842" key="SettingsEditor" timestamp="1614136625477">
       <screen x="314" y="429" width="1278" height="1287" />
     </state>
     <state x="1030" y="449" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1614129790475" />
     <state x="625" y="842" key="SettingsEditor/314.429.1278.1287@314.429.1278.1287" timestamp="1614136625477" />
+    <state x="550" y="823" key="Vcs.Push.Dialog.v2" timestamp="1614153480370">
+      <screen x="311" y="429" width="1278" height="1287" />
+    </state>
+    <state x="550" y="823" key="Vcs.Push.Dialog.v2/311.429.1278.1287@311.429.1278.1287" timestamp="1614153480370" />
+    <state x="553" y="823" key="Vcs.Push.Dialog.v2/314.429.1278.1287@314.429.1278.1287" timestamp="1614147350516" />
     <state x="774" y="1005" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614137197789">
       <screen x="314" y="429" width="1278" height="1287" />
     </state>

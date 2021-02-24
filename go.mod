@@ -9,7 +9,7 @@ require (
 	github.com/facebookgo/stats v0.0.0-20151006221625-1b76add642e4 // indirect
 	github.com/gorilla/mux v1.8.0
 	github.com/json-iterator/go v1.1.10
-	github.com/robfig/cron v1.2.0 // indirect
+	github.com/robfig/cron v1.2.0
 	github.com/urfave/negroni v1.0.0
 	golang.org/x/net v0.0.0-20210222171744-9060382bd457
 )

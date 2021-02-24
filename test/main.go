@@ -25,8 +25,8 @@ func main() {
 
 	var addr *string
 	var path *string
-	addr = flag.String("addr", ":80", "")   // listen端口，默认8080
-	path = flag.String("path", "./img", "") // 文件路径，默认当前目录
+	addr = flag.String("addr", ":80", "")    // listen端口，默认8080
+	path = flag.String("path", "../img", "") // 文件路径，默认当前目录
 	flag.Parse()
 	//fmt.Println("addr=", *addr, ", path=", *path) // 在控制台输出配置
 	http.ListenAndServe(*addr, &webdav.Handler{
@@ -70,12 +70,4 @@ func getPicture() {
 	cipherStr := h.Sum(nil)
 	fmt.Printf("%s\n", hex.EncodeToString(cipherStr)) // 输出加密结果
 	_ = ioutil.WriteFile("./img/"+hex.EncodeToString(cipherStr)+".jpg", body2, 0755)
-
-	// idx序号循环
-	if i > 8 {
-		i = 0
-	} else {
-		i++
-	}
-
 }

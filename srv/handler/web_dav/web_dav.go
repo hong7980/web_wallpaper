@@ -1,9 +1,16 @@
 package web_dav
 
 import (
-	"net/http"
-
+	"fmt"
 	"golang.org/x/net/webdav"
+	"net/http"
+)
+
+var (
+	Fs = &webdav.Handler{
+		FileSystem: webdav.Dir("../../../img"),
+		LockSystem: webdav.NewMemLS(),
+	}
 )
 
 func WebDav(w http.ResponseWriter, req *http.Request, next http.HandlerFunc) {
@@ -12,9 +19,8 @@ func WebDav(w http.ResponseWriter, req *http.Request, next http.HandlerFunc) {
 		http.Error(w, "WebDAV: Read Only!!!", http.StatusForbidden)
 		return
 	}
-	fs := &webdav.Handler{
-		FileSystem: webdav.Dir("../../../img"),
-		LockSystem: webdav.NewMemLS(),
-	}
-	fs.ServeHTTP(w, req)
+	fmt.Println("1")
+	Fs.ServeHTTP(w, req)
+	fmt.Println("2")
+	next(w, req)
 }
