@@ -28,7 +28,7 @@ func main() {
 	addr = flag.String("addr", ":80", "")   // listen端口，默认8080
 	path = flag.String("path", "./img", "") // 文件路径，默认当前目录
 	flag.Parse()
-	fmt.Println("addr=", *addr, ", path=", *path) // 在控制台输出配置
+	//fmt.Println("addr=", *addr, ", path=", *path) // 在控制台输出配置
 	http.ListenAndServe(*addr, &webdav.Handler{
 		FileSystem: webdav.Dir(*path),
 		LockSystem: webdav.NewMemLS(),
@@ -36,10 +36,11 @@ func main() {
 }
 
 func getPicture() {
-	// huoqushijianz
+	// 获取当前时间戳
 	timeStr := strconv.FormatInt(time.Now().UnixNano(), 10)
 	//fmt.Println(timeStr)
 
+	// 请求获取图片链接
 	r, err := http.Get("http://cn.bing.com/HPImageArchive.aspx?format=js&idx=" + strconv.Itoa(i) + "&n=1&nc=" + timeStr + "&pid=hp&FORM=BEHPTB")
 	if err != nil {
 		panic(err)
@@ -48,13 +49,13 @@ func getPicture() {
 	body, _ := ioutil.ReadAll(r.Body)
 	//fmt.Printf("%s", body)
 
-	// Parse the url in json
+	// 从响应体中解析图片url
 	var obj map[string]interface{}
 	jsoniter.Unmarshal(body, &obj)
 	imagesUrl := (obj["images"].([]interface{}))[0].(map[string]interface{})
 	fmt.Println(imagesUrl["url"])
 
-	// get images
+	// 发起Get请求下载图片
 	r2, err2 := http.Get("http://cn.bing.com" + imagesUrl["url"].(string))
 	if err2 != nil {
 		panic(err2)
@@ -63,13 +64,14 @@ func getPicture() {
 	body2, _ := ioutil.ReadAll(r2.Body)
 	//fmt.Printf("%s", body2)
 
-	// md5
+	// md5加密图片用作文件唯一标识
 	h := md5.New()
 	h.Write(body2)
 	cipherStr := h.Sum(nil)
 	fmt.Printf("%s\n", hex.EncodeToString(cipherStr)) // 输出加密结果
-
 	_ = ioutil.WriteFile("./img/"+hex.EncodeToString(cipherStr)+".jpg", body2, 0755)
+
+	// idx序号循环
 	if i > 8 {
 		i = 0
 	} else {
