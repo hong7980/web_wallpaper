@@ -1,10 +1,9 @@
-package web_dav
+package webdav
 
 import (
 	"fmt"
-	"net/http"
-
 	"golang.org/x/net/webdav"
+	"net/http"
 )
 
 var (
@@ -15,13 +14,12 @@ var (
 )
 
 func WebDav(w http.ResponseWriter, r *http.Request, next http.HandlerFunc) {
+	fmt.Println(r.Method)
 	switch r.Method {
 	case "PUT", "DELETE", "PROPPATCH", "MKCOL", "COPY", "MOVE":
 		http.Error(w, "WebDAV: Read Only!!!", http.StatusForbidden)
 		return
 	}
-	//fmt.Println(os.Getwd())
 	Fs.ServeHTTP(w, r)
-	fmt.Println("2")
 	next(w, r)
 }

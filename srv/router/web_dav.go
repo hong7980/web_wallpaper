@@ -3,21 +3,21 @@ package router
 import (
 	"github.com/gorilla/mux"
 	"github.com/urfave/negroni"
-	"webdav/srv/handler/web_dav"
+	"webdav/srv/handler/webdav"
 )
 
 const (
 	WDVRoute = "/"
 )
 
-// WDVRouter builds a web_dav router
+// WDVRouter builds a webdav router
 func WDVRouter() *mux.Router {
 	router := mux.NewRouter()
 
 	// 路由
-	router.Path(WDVRoute).
+	router.PathPrefix(WDVRoute).
 		Handler(negroni.New(
-			negroni.HandlerFunc(web_dav.WebDav)))
+			negroni.HandlerFunc(webdav.WebDav)))
 
 	return router
 }

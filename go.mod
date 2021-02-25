@@ -8,6 +8,7 @@ require (
 	github.com/facebookgo/httpdown v0.0.0-20180706035922-5979d39b15c2 // indirect
 	github.com/facebookgo/stats v0.0.0-20151006221625-1b76add642e4 // indirect
 	github.com/gorilla/mux v1.8.0
+	github.com/jasonlvhit/gocron v0.0.1 // indirect
 	github.com/json-iterator/go v1.1.10
 	github.com/robfig/cron v1.2.0
 	github.com/urfave/negroni v1.0.0
