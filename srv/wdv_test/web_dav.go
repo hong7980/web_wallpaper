@@ -1,10 +1,8 @@
-package main
+package wdv_test
 
 import (
-	"fmt"
 	"golang.org/x/net/webdav"
 	"net/http"
-	"os"
 )
 
 //var (
@@ -41,7 +39,7 @@ var (
 	}
 )
 
-func dav(w http.ResponseWriter, req *http.Request) {
+func Dav(w http.ResponseWriter, req *http.Request) {
 	switch req.Method {
 	case "PUT", "DELETE", "PROPPATCH", "MKCOL", "COPY", "MOVE":
 		http.Error(w, "WebDAV: Read Only!!!", http.StatusForbidden)
@@ -50,8 +48,7 @@ func dav(w http.ResponseWriter, req *http.Request) {
 	fs.ServeHTTP(w, req)
 }
 
-func main() {
-	fmt.Println(os.Getwd())
-	http.HandleFunc("/", dav)
-	http.ListenAndServe(":8089", nil)
+func DavRun() {
+	http.HandleFunc("/", Dav)
+	http.ListenAndServe(":8001", nil)
 }

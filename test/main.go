@@ -6,7 +6,6 @@ import (
 	"flag"
 	"fmt"
 	jsoniter "github.com/json-iterator/go"
-	"github.com/robfig/cron"
 	"golang.org/x/net/webdav"
 	"io/ioutil"
 	"net/http"
@@ -17,16 +16,16 @@ import (
 var i int
 
 func main() {
-	i = 0
-	c := cron.New()
-	spec := "*/* * 1 * * ?"
-	c.AddFunc(spec, getPicture)
-	c.Start()
+	//i = 0
+	//c := cron.New()
+	//spec := "*/* * 1 * * ?"
+	//c.AddFunc(spec, getPicture)
+	//c.Start()
 
 	var addr *string
 	var path *string
-	addr = flag.String("addr", ":80", "")    // listen端口，默认8080
-	path = flag.String("path", "../img", "") // 文件路径，默认当前目录
+	addr = flag.String("addr", ":8001", "") // listen端口，默认8080
+	path = flag.String("path", "./img", "") // 文件路径，默认当前目录
 	flag.Parse()
 	//fmt.Println("addr=", *addr, ", path=", *path) // 在控制台输出配置
 	http.ListenAndServe(*addr, &webdav.Handler{
