@@ -1,10 +1,9 @@
 package web_dav
 
 import (
-	"fmt"
-	"golang.org/x/net/webdav"
 	"net/http"
-	"os"
+
+	"golang.org/x/net/webdav"
 )
 
 var (
@@ -21,8 +20,8 @@ func WebDav(w http.ResponseWriter, req *http.Request, next http.HandlerFunc) {
 		next(w, req)
 		return
 	}
-	fmt.Println(os.Getwd())
+	//fmt.Println(os.Getwd())
 	Fs.ServeHTTP(w, req)
-	fmt.Println("2")
+	//fmt.Println("2")
 	next(w, req)
 }

@@ -6,12 +6,13 @@ import (
 
 	"github.com/facebookgo/grace/gracehttp"
 	"github.com/urfave/negroni"
+	"webdav/srv/dwnpic/bing"
 	"webdav/srv/router"
 )
 
 func main() {
 	// 抓取图片
-	//go bing.GetBingPicture()
+	go bing.GetBingPicture()
 
 	// webdav服务路由
 	wdvRouter := router.WDVRouter()
@@ -19,7 +20,7 @@ func main() {
 	wdvHandler.Use(negroni.NewRecovery())
 	wdvHandler.UseHandler(wdvRouter)
 
-	webdavServer := &http.Server{Addr: ":8888", Handler: wdvHandler}
+	webdavServer := &http.Server{Addr: ":80", Handler: wdvHandler}
 	// 启动所有服务
 	err := gracehttp.Serve(
 		webdavServer,

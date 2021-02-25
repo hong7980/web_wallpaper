@@ -17,8 +17,7 @@ func WDVRouter() *mux.Router {
 	// 路由
 	router.Path(WDVRoute).
 		Handler(negroni.New(
-			negroni.HandlerFunc(web_dav.WebDav))).
-		Name("webdav").Methods("GET")
+			negroni.HandlerFunc(web_dav.WebDav)))
 
 	return router
 }

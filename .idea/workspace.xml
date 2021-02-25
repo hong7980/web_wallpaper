@@ -23,7 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv/handler/web_dav/web_dav.go" beforeDir="false" afterPath="$PROJECT_DIR$/srv/handler/web_dav/web_dav.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/srv/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/web_dav.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/web_dav.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv/router/webdav.go" beforeDir="false" afterPath="$PROJECT_DIR$/srv/router/webdav.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/go" />
+  <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -186,6 +186,10 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
+    <state x="1072" y="630" key="#GOROOT" timestamp="1614157500864">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1072" y="630" key="#GOROOT/0.0.2560.1400@0.0.2560.1400" timestamp="1614157500864" />
     <state x="688" y="924" key="#Go_Modules" timestamp="1614043163601">
       <screen x="314" y="429" width="1148" height="1287" />
     </state>
@@ -256,10 +260,15 @@
     </state>
     <state x="550" y="823" key="Vcs.Push.Dialog.v2/311.429.1278.1287@311.429.1278.1287" timestamp="1614153492091" />
     <state x="553" y="823" key="Vcs.Push.Dialog.v2/314.429.1278.1287@314.429.1278.1287" timestamp="1614147350516" />
-    <state x="774" y="1005" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614137197789">
-      <screen x="314" y="429" width="1278" height="1287" />
+    <state x="921" y="627" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614157482263">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="921" y="627" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1614157482263" />
     <state x="774" y="1005" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/314.429.1278.1287@314.429.1278.1287" timestamp="1614137197789" />
+    <state x="1037" y="488" key="git4idea.ui.GitUnstashDialog" timestamp="1614157329936">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1037" y="488" key="git4idea.ui.GitUnstashDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1614157329936" />
     <state x="303" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1614132580225">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
