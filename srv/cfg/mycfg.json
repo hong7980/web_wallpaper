@@ -1,3 +1,5 @@
 {
-
+  "WebdavPort": "80",
+  "DwnpicsrvPort": "50001",
+  "AutoUpdateTime": 10
 }

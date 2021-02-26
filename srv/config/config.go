@@ -16,6 +16,9 @@ type cfgs struct {
 
 	WebdavPort    string
 	DwnpicsrvPort string
+
+	AutoUpdateTime int // 自动更新时间
+
 }
 
 func LoadCfg() error {
