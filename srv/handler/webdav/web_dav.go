@@ -15,6 +15,7 @@ var (
 
 func WebDav(w http.ResponseWriter, r *http.Request, next http.HandlerFunc) {
 	fmt.Println(r.Method)
+	fmt.Println(r.Header)
 	switch r.Method {
 	case "PUT", "DELETE", "PROPPATCH", "MKCOL", "COPY", "MOVE":
 		http.Error(w, "WebDAV: Read Only!!!", http.StatusForbidden)
