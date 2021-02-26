@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"webdav/srv/handler/webdav"
 
 	"github.com/facebookgo/grace/gracehttp"
 	"github.com/jasonlvhit/gocron"
@@ -15,12 +16,15 @@ import (
 )
 
 func init() {
-	//fmt.Println(os.Getwd())
+	fmt.Println(os.Getwd())
 	err := config.LoadCfg()
 	if err != nil {
 		fmt.Println("load cfg failed: " + err.Error())
 		os.Exit(-1)
 	}
+
+	// init webdav dir value
+	webdav.InitValue()
 }
 
 func main() {

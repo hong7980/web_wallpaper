@@ -1,4 +1,4 @@
-package main
+package test
 
 import (
 	"crypto/md5"
@@ -15,7 +15,7 @@ import (
 
 var i int
 
-func main() {
+func mains() {
 	//i = 0
 	//c := cron.New()
 	//spec := "*/* * 1 * * ?"

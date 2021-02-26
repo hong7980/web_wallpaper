@@ -23,7 +23,7 @@ func GetBingPicture() {
 
 		fmt.Println(i)
 		// 请求获取图片链接
-		r, err := http.Get("http://cn.bin.com/HPImageArchive.aspx?format=js&idx=" + strconv.Itoa(i) +
+		r, err := http.Get("http://cn.bing.com/HPImageArchive.aspx?format=js&idx=" + strconv.Itoa(i) +
 			"&n=1&nc=" + timeStr + "&pid=hp&FORM=BEHPTB")
 		if err != nil {
 			fmt.Println("step1: Get pic url fail err:", err)
@@ -40,7 +40,7 @@ func GetBingPicture() {
 		fmt.Println(imagesUrl["url"])
 
 		// 发起Get请求下载图片
-		r2, err2 := http.Get("http://cn.bin.com" + imagesUrl["url"].(string))
+		r2, err2 := http.Get("http://cn.bing.com" + imagesUrl["url"].(string))
 		if err2 != nil {
 			fmt.Println("step2: Get pic fail err:", err2)
 			return

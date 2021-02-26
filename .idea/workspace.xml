@@ -19,11 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1b31ecf-23c9-483d-a81d-8cd812810c07" name="Default Changelist" comment="add update bing picture interface">
+    <list default="true" id="c1b31ecf-23c9-483d-a81d-8cd812810c07" name="Default Changelist" comment="add config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv/cfg/mycfg.json" beforeDir="false" afterPath="$PROJECT_DIR$/srv/cfg/mycfg.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/srv/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bing/0ac24a9b93c899194128a179995962c3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bing/1ec8c44dd7d7a868362d8ef2f518e99b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bing/24f68d2dc5d7b6e16a2c79f12c46e5d5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bing/65a32903e848eb029c97551ae519c9ed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bing/775f5ab6a13b38d5de17aa817bdce43d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bing/a257176d89feebf5c406a59d2651c62f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bing/b27e0ba4d8e3d301342032b32085edba.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bing/b84c02739533fb9f4445fd45e9c83cef.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv/bin/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srv/bin/start.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv/dwnpic/bing/Wallpaper.go" beforeDir="false" afterPath="$PROJECT_DIR$/srv/dwnpic/bing/Wallpaper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv/handler/webdav/web_dav.go" beforeDir="false" afterPath="$PROJECT_DIR$/srv/handler/webdav/web_dav.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/srv/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/download_img.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/download_img.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +51,7 @@
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -69,10 +81,12 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/srv/bin" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/srv/wdv_test" />
       <recent name="$PROJECT_DIR$/test" />
       <recent name="D:\goproject\web_wallpaper\test" />
@@ -184,7 +198,8 @@
     <MESSAGE value="format the code" />
     <MESSAGE value="fix bug" />
     <MESSAGE value="add update bing picture interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="add update bing picture interface" />
+    <MESSAGE value="add config" />
+    <option name="LAST_COMMIT_MESSAGE" value="add config" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -198,70 +213,79 @@
       <screen x="311" y="429" width="1278" height="1287" />
     </state>
     <state x="550" y="749" key="#com.intellij.execution.impl.EditConfigurationsDialog/311.429.1278.1287@311.429.1278.1287" timestamp="1614256334352" />
+    <state x="1361" y="899" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614338387644">
+      <screen x="311" y="429" width="2560" height="1297" />
+    </state>
+    <state x="1361" y="899" key="#com.intellij.fileTypes.FileTypeChooser/311.429.2560.1297@311.429.2560.1297" timestamp="1614338387644" />
     <state x="610" y="429" key="FileChooserDialogImpl" timestamp="1614097972789">
       <screen x="314" y="429" width="1016" height="448" />
     </state>
     <state x="610" y="429" key="FileChooserDialogImpl/314.429.1016.448@314.429.1016.448" timestamp="1614097972789" />
-    <state width="1236" height="595" key="GridCell.Tab.0.bottom" timestamp="1614311483092">
-      <screen x="311" y="429" width="1278" height="1287" />
+    <state width="2518" height="600" key="GridCell.Tab.0.bottom" timestamp="1614338092314">
+      <screen x="311" y="429" width="2560" height="1297" />
     </state>
     <state width="1232" height="73" key="GridCell.Tab.0.bottom/311.429.1274.588@311.429.1274.588" timestamp="1614218952067" />
-    <state width="1236" height="595" key="GridCell.Tab.0.bottom/311.429.1278.1287@311.429.1278.1287" timestamp="1614311483092" />
+    <state width="1236" height="595" key="GridCell.Tab.0.bottom/311.429.1278.1287@311.429.1278.1287" timestamp="1614337561594" />
     <state width="1657" height="379" key="GridCell.Tab.0.bottom/311.429.1699.1287@311.429.1699.1287" timestamp="1614149135826" />
     <state width="1878" height="286" key="GridCell.Tab.0.bottom/311.429.1920.881@311.429.1920.881" timestamp="1614154489447" />
     <state width="1878" height="286" key="GridCell.Tab.0.bottom/311.429.1920.937@311.429.1920.937" timestamp="1614155894066" />
-    <state width="2518" height="317" key="GridCell.Tab.0.bottom/311.429.2560.1297@311.429.2560.1297" timestamp="1614242046836" />
+    <state width="2518" height="600" key="GridCell.Tab.0.bottom/311.429.2560.1297@311.429.2560.1297" timestamp="1614338092314" />
     <state width="974" height="367" key="GridCell.Tab.0.bottom/314.429.1016.999@314.429.1016.999" timestamp="1614095447338" />
     <state width="990" height="367" key="GridCell.Tab.0.bottom/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
     <state width="1106" height="367" key="GridCell.Tab.0.bottom/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
     <state width="1236" height="379" key="GridCell.Tab.0.bottom/314.429.1278.1287@314.429.1278.1287" timestamp="1614147690435" />
     <state width="693" height="367" key="GridCell.Tab.0.bottom/314.429.735.999@314.429.735.999" timestamp="1614091064522" />
-    <state width="1236" height="595" key="GridCell.Tab.0.center" timestamp="1614311483092">
-      <screen x="311" y="429" width="1278" height="1287" />
+    <state width="2518" height="600" key="GridCell.Tab.0.center" timestamp="1614338092314">
+      <screen x="311" y="429" width="2560" height="1297" />
     </state>
     <state width="1232" height="73" key="GridCell.Tab.0.center/311.429.1274.588@311.429.1274.588" timestamp="1614218952067" />
-    <state width="1236" height="595" key="GridCell.Tab.0.center/311.429.1278.1287@311.429.1278.1287" timestamp="1614311483092" />
+    <state width="1236" height="595" key="GridCell.Tab.0.center/311.429.1278.1287@311.429.1278.1287" timestamp="1614337561594" />
     <state width="1657" height="379" key="GridCell.Tab.0.center/311.429.1699.1287@311.429.1699.1287" timestamp="1614149135825" />
     <state width="1878" height="286" key="GridCell.Tab.0.center/311.429.1920.881@311.429.1920.881" timestamp="1614154489447" />
     <state width="1878" height="286" key="GridCell.Tab.0.center/311.429.1920.937@311.429.1920.937" timestamp="1614155894066" />
-    <state width="2518" height="317" key="GridCell.Tab.0.center/311.429.2560.1297@311.429.2560.1297" timestamp="1614242046836" />
+    <state width="2518" height="600" key="GridCell.Tab.0.center/311.429.2560.1297@311.429.2560.1297" timestamp="1614338092314" />
     <state width="974" height="367" key="GridCell.Tab.0.center/314.429.1016.999@314.429.1016.999" timestamp="1614095447338" />
     <state width="990" height="367" key="GridCell.Tab.0.center/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
     <state width="1106" height="367" key="GridCell.Tab.0.center/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
     <state width="1236" height="379" key="GridCell.Tab.0.center/314.429.1278.1287@314.429.1278.1287" timestamp="1614147690434" />
     <state width="693" height="367" key="GridCell.Tab.0.center/314.429.735.999@314.429.735.999" timestamp="1614091064521" />
-    <state width="1236" height="595" key="GridCell.Tab.0.left" timestamp="1614311483092">
-      <screen x="311" y="429" width="1278" height="1287" />
+    <state width="2518" height="600" key="GridCell.Tab.0.left" timestamp="1614338092314">
+      <screen x="311" y="429" width="2560" height="1297" />
     </state>
     <state width="1232" height="73" key="GridCell.Tab.0.left/311.429.1274.588@311.429.1274.588" timestamp="1614218952066" />
-    <state width="1236" height="595" key="GridCell.Tab.0.left/311.429.1278.1287@311.429.1278.1287" timestamp="1614311483092" />
+    <state width="1236" height="595" key="GridCell.Tab.0.left/311.429.1278.1287@311.429.1278.1287" timestamp="1614337561594" />
     <state width="1657" height="379" key="GridCell.Tab.0.left/311.429.1699.1287@311.429.1699.1287" timestamp="1614149135825" />
     <state width="1878" height="286" key="GridCell.Tab.0.left/311.429.1920.881@311.429.1920.881" timestamp="1614154489447" />
     <state width="1878" height="286" key="GridCell.Tab.0.left/311.429.1920.937@311.429.1920.937" timestamp="1614155894066" />
-    <state width="2518" height="317" key="GridCell.Tab.0.left/311.429.2560.1297@311.429.2560.1297" timestamp="1614242046836" />
+    <state width="2518" height="600" key="GridCell.Tab.0.left/311.429.2560.1297@311.429.2560.1297" timestamp="1614338092314" />
     <state width="974" height="367" key="GridCell.Tab.0.left/314.429.1016.999@314.429.1016.999" timestamp="1614095447337" />
     <state width="990" height="367" key="GridCell.Tab.0.left/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
     <state width="1106" height="367" key="GridCell.Tab.0.left/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
     <state width="1236" height="379" key="GridCell.Tab.0.left/314.429.1278.1287@314.429.1278.1287" timestamp="1614147690434" />
     <state width="693" height="367" key="GridCell.Tab.0.left/314.429.735.999@314.429.735.999" timestamp="1614091064521" />
-    <state width="1236" height="595" key="GridCell.Tab.0.right" timestamp="1614311483092">
-      <screen x="311" y="429" width="1278" height="1287" />
+    <state width="2518" height="600" key="GridCell.Tab.0.right" timestamp="1614338092314">
+      <screen x="311" y="429" width="2560" height="1297" />
     </state>
     <state width="1232" height="73" key="GridCell.Tab.0.right/311.429.1274.588@311.429.1274.588" timestamp="1614218952067" />
-    <state width="1236" height="595" key="GridCell.Tab.0.right/311.429.1278.1287@311.429.1278.1287" timestamp="1614311483092" />
+    <state width="1236" height="595" key="GridCell.Tab.0.right/311.429.1278.1287@311.429.1278.1287" timestamp="1614337561594" />
     <state width="1657" height="379" key="GridCell.Tab.0.right/311.429.1699.1287@311.429.1699.1287" timestamp="1614149135825" />
     <state width="1878" height="286" key="GridCell.Tab.0.right/311.429.1920.881@311.429.1920.881" timestamp="1614154489447" />
     <state width="1878" height="286" key="GridCell.Tab.0.right/311.429.1920.937@311.429.1920.937" timestamp="1614155894066" />
-    <state width="2518" height="317" key="GridCell.Tab.0.right/311.429.2560.1297@311.429.2560.1297" timestamp="1614242046836" />
+    <state width="2518" height="600" key="GridCell.Tab.0.right/311.429.2560.1297@311.429.2560.1297" timestamp="1614338092314" />
     <state width="974" height="367" key="GridCell.Tab.0.right/314.429.1016.999@314.429.1016.999" timestamp="1614095447338" />
     <state width="990" height="367" key="GridCell.Tab.0.right/314.429.1032.999@314.429.1032.999" timestamp="1614090689071" />
     <state width="1106" height="367" key="GridCell.Tab.0.right/314.429.1148.1287@314.429.1148.1287" timestamp="1614085388964" />
     <state width="1236" height="379" key="GridCell.Tab.0.right/314.429.1278.1287@314.429.1278.1287" timestamp="1614147690434" />
     <state width="693" height="367" key="GridCell.Tab.0.right/314.429.735.999@314.429.735.999" timestamp="1614091064522" />
-    <state x="625" y="842" key="SettingsEditor" timestamp="1614136625477">
-      <screen x="314" y="429" width="1278" height="1287" />
+    <state x="582" y="843" width="736" height="459" key="MultipleFileMergeDialog" timestamp="1614337546387">
+      <screen x="311" y="429" width="1278" height="1287" />
+    </state>
+    <state x="582" y="843" width="736" height="459" key="MultipleFileMergeDialog/311.429.1278.1287@311.429.1278.1287" timestamp="1614337546387" />
+    <state x="337" y="790" key="SettingsEditor" timestamp="1614328541999">
+      <screen x="311" y="429" width="1278" height="1287" />
     </state>
     <state x="1030" y="449" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1614129790475" />
+    <state x="337" y="790" key="SettingsEditor/311.429.1278.1287@311.429.1278.1287" timestamp="1614328541999" />
     <state x="625" y="842" key="SettingsEditor/314.429.1278.1287@314.429.1278.1287" timestamp="1614136625477" />
     <state x="790" y="826" key="Vcs.Push.Dialog.v2" timestamp="1614223987710">
       <screen x="311" y="429" width="2560" height="1297" />
@@ -269,10 +293,10 @@
     <state x="550" y="823" key="Vcs.Push.Dialog.v2/311.429.1278.1287@311.429.1278.1287" timestamp="1614153492091" />
     <state x="790" y="826" key="Vcs.Push.Dialog.v2/311.429.2560.1297@311.429.2560.1297" timestamp="1614223987710" />
     <state x="553" y="823" key="Vcs.Push.Dialog.v2/314.429.1278.1287@314.429.1278.1287" timestamp="1614147350516" />
-    <state x="771" y="1005" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614309245720">
+    <state x="771" y="1005" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614337538409">
       <screen x="311" y="429" width="1278" height="1287" />
     </state>
-    <state x="771" y="1005" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/311.429.1278.1287@311.429.1278.1287" timestamp="1614309245720" />
+    <state x="771" y="1005" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/311.429.1278.1287@311.429.1278.1287" timestamp="1614337538409" />
     <state x="774" y="1005" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/314.429.1278.1287@314.429.1278.1287" timestamp="1614137197789" />
     <state x="303" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1614132580225">
       <screen x="0" y="0" width="2560" height="1400" />
