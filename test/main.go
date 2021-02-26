@@ -40,7 +40,7 @@ func getPicture() {
 	//fmt.Println(timeStr)
 
 	// 请求获取图片链接
-	r, err := http.Get("http://cn.bing.com/HPImageArchive.aspx?format=js&idx=" + strconv.Itoa(i) + "&n=1&nc=" + timeStr + "&pid=hp&FORM=BEHPTB")
+	r, err := http.Get("http://cn.bin.com/HPImageArchive.aspx?format=js&idx=" + strconv.Itoa(i) + "&n=1&nc=" + timeStr + "&pid=hp&FORM=BEHPTB")
 	if err != nil {
 		panic(err)
 	}
@@ -55,7 +55,7 @@ func getPicture() {
 	fmt.Println(imagesUrl["url"])
 
 	// 发起Get请求下载图片
-	r2, err2 := http.Get("http://cn.bing.com" + imagesUrl["url"].(string))
+	r2, err2 := http.Get("http://cn.bin.com" + imagesUrl["url"].(string))
 	if err2 != nil {
 		panic(err2)
 	}

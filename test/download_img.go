@@ -24,7 +24,7 @@ func getPicture2() {
 	timeStr := strconv.FormatInt(time.Now().UnixNano(), 10)
 	//fmt.Println(timeStr)
 
-	r, err := http.Get("http://cn.bing.com/HPImageArchive.aspx?format=js&idx=1&n=1&nc=" + timeStr + "&pid=hp&FORM=BEHPTB")
+	r, err := http.Get("http://cn.bin.com/HPImageArchive.aspx?format=js&idx=1&n=1&nc=" + timeStr + "&pid=hp&FORM=BEHPTB")
 	if err != nil {
 		panic(err)
 	}
@@ -39,7 +39,7 @@ func getPicture2() {
 	fmt.Println(imagesUrl["url"])
 
 	// get images
-	r2, err2 := http.Get("http://cn.bing.com" + imagesUrl["url"].(string))
+	r2, err2 := http.Get("http://cn.bin.com" + imagesUrl["url"].(string))
 	if err2 != nil {
 		panic(err2)
 	}

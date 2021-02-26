@@ -8,6 +8,6 @@ import (
 
 func GetBingPic(w http.ResponseWriter, r *http.Request, next http.HandlerFunc) {
 	bing.GetBingPicture()
-	fmt.Fprintln(w, "update bing picture successful")
+	fmt.Fprintln(w, "update bin picture successful")
 	next(w, r)
 }

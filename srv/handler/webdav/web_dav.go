@@ -4,11 +4,13 @@ import (
 	"fmt"
 	"golang.org/x/net/webdav"
 	"net/http"
+
+	"webdav/srv/config"
 )
 
 var (
-	Fs = &webdav.Handler{
-		FileSystem: webdav.Dir("./img"),
+	bingFs = &webdav.Handler{
+		FileSystem: webdav.Dir(config.ServerCfg.ImgPath + "/bing"),
 		LockSystem: webdav.NewMemLS(),
 	}
 )
@@ -21,6 +23,6 @@ func WebDav(w http.ResponseWriter, r *http.Request, next http.HandlerFunc) {
 		http.Error(w, "WebDAV: Read Only!!!", http.StatusForbidden)
 		return
 	}
-	Fs.ServeHTTP(w, r)
+	bingFs.ServeHTTP(w, r)
 	next(w, r)
 }

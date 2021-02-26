@@ -16,7 +16,9 @@ type cfgs struct {
 
 	WebdavPort    string
 	DwnpicsrvPort string
+	UpdateBingPic string
 
+	ImgPath        string
 	AutoUpdateTime int // 自动更新时间
 
 }
@@ -26,7 +28,7 @@ func LoadCfg() error {
 }
 
 func (cf *cfgs) load() (err error) {
-	cf.file = *flag.String("c", "../cfg/cfg.json", "the config file")
+	cf.file = *flag.String("c", "../cfg/mycfg.json", "the config file")
 
 	// 读取配置文件
 	f, err := os.Open(cf.file)
