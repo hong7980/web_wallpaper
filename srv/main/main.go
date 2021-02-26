@@ -15,6 +15,7 @@ import (
 )
 
 func init() {
+	//fmt.Println(os.Getwd())
 	err := config.LoadCfg()
 	if err != nil {
 		fmt.Println("load cfg failed: " + err.Error())
