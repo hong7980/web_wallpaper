@@ -16,7 +16,7 @@ type cfgs struct {
 
 	WebdavPort    string
 	DwnpicsrvPort string
-	UpdateBingPic string
+	UpdateBingPic string // 更新bing路由信息
 
 	ImgPath        string
 	AutoUpdateTime int // 自动更新时间

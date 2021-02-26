@@ -1,8 +1,7 @@
 {
-  //路由
   "WebdavPort": "80",
   "DwnpicsrvPort": "50001",
-  "UpdateBingPic": "/bing", //更新bing图片路由地址
+  "UpdateBingPic": "/bing",
 
 
   "AutoUpdateTime": 10,
